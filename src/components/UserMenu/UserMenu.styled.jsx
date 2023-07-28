@@ -12,7 +12,7 @@ export const UserText = styled.p`
 `;
 
 export const AccentText = styled.span`
-    color: white;
+    color: black;
 `;
 
 export const Button = styled.button`
@@ -28,13 +28,13 @@ export const Button = styled.button`
     min-height: 30px;
     margin: 0;
 
-    background-color: white;
+    background-color: black;
     border: 2px solid black;
     border-radius: 5px;
     cursor: pointer;
     
     &:hover{
-    color: white;
+    color: black;
     background-color: black;
     border-color: white;
     }

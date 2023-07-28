@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 export const Container = styled.div`
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-right: 12px;
+    gap: 20px;
+    margin-right: 20px;
 `;
 
 export const StyledLink = styled(NavLink)`
