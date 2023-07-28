@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import PropTypes from 'prop-types';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { toast } from 'react-toastify';
@@ -80,6 +79,4 @@ export const ContactForm = () => {
   );
 };
 
-ContactForm.propTypes = {
-  onSubmit: PropTypes.func,
-};
+
