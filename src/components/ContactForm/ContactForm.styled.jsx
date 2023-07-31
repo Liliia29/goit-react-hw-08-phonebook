@@ -7,6 +7,15 @@ export const StyledForm = styled(Form)`
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
+    background-color: #EDF2F7;
+    border: 2px solid black;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius: 5px;
+    
+    max-width: 350px;
 `;
 
 export const Label = styled.label`
@@ -38,17 +47,22 @@ export const Button = styled.button`
 
     min-width: 140px;
     min-height: 30px;
-    margin: 0;
+    margin-top: 20px;
 
-    background-color: white;
-    border: 2px solid black;
+    background-color: #319795;
+    border: 2px solid #319795;
     border-radius: 5px;
     cursor: pointer;
 
+    transition: color 250ms cubic-bezier(0.65, 0.05, 0.36, 1),
+    background-color 250ms cubic-bezier(0.65, 0.05, 0.36, 1),
+    border-color color 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
+    
+    
     &:hover{
     color: white;
-    background-color: black;
-    border-color: white;
+    background-color: #2C7A7B;
+    border-color: #2C7A7B;
     }
 `;
 

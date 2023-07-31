@@ -30,10 +30,10 @@ export const ContactList = () => {
 
   return (
     <List>
-      {visibleContacts.map(({ id, name, phone }, idx) => (
+      {visibleContacts.map(({ id, name, number }, idx) => (
         <ListItem key={id}>
           <div>{idx + 1}.</div>
-          {name}: {phone}
+          {name}: {number}
           <Button
             onClick={() => {
               setContactToDeleteId(id);

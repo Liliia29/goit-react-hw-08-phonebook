@@ -5,7 +5,7 @@ import { AccentText, Container, UserText, Button } from './UserMenu.styled';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
-  const { user } = useAuth;
+  const { user } = useAuth();
 
   return (
     <Container>

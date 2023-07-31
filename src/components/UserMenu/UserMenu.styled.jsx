@@ -9,10 +9,11 @@ export const Container = styled.div`
 
 export const UserText = styled.p`
     font-weight: 700;
+    color: white;
 `;
 
 export const AccentText = styled.span`
-    color: black;
+    color: white;
 `;
 
 export const Button = styled.button`
@@ -28,15 +29,20 @@ export const Button = styled.button`
     min-height: 30px;
     margin: 0;
 
-    background-color: black;
-    border: 2px solid black;
+    background-color: #319795;
+    border: 2px solid #319795;
     border-radius: 5px;
     cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.65, 0.05, 0.36, 1),
+    background-color 250ms cubic-bezier(0.65, 0.05, 0.36, 1),
+    border-color color 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
+    
     
     &:hover{
-    color: black;
-    background-color: black;
-    border-color: white;
+    color: white;
+    background-color: #2C7A7B;
+    border-color: #2C7A7B;
     }
 `;
 
