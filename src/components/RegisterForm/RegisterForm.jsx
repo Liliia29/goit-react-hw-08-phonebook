@@ -28,6 +28,7 @@ export const RegisterForm = () => {
     setDetermineRegisterBtn(true);
     dispatch(register(values)).then(() => {
       setDetermineRegisterBtn(false);
+      
     });
     action.resetForm();
   };

@@ -37,7 +37,7 @@ export const handleDeleteContactFulfilled = (state, action) => {
 export const handleRegisterFulfilled = (state, action) => {
   state.user = action.payload.user;
   state.token = action.payload.token;
-  state.isLoggedId = true;
+  state.isLoggedIn = true;
   state.error = null;
   state.isLoading = false;
 };
@@ -45,7 +45,7 @@ export const handleRegisterFulfilled = (state, action) => {
 export const handleLogInFulfilled = (state, action) => {
   state.user = action.payload.user;
   state.token = action.payload.token;
-  state.isLoggedId = true;
+  state.isLoggedIn = true;
   state.error = null;
   state.isLoading = false;
 };
@@ -53,14 +53,14 @@ export const handleLogInFulfilled = (state, action) => {
 export const handleLogOutFulfilled = state => {
   state.user = {name: null, email: null};
   state.token = null;
-  state.isLoggedId = false;
+  state.isLoggedIn = false;
   state.error = null;
   state.isLoading = false;
 };
 
 export const handleRefreshUserFulfilled = (state, action) => {
   state.user = action.payload;
-  state.isLoggedId = true;
+  state.isLoggedIn = true;
   state.error = null;
   state.isRefreshing = false;
 };

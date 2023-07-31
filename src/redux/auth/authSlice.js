@@ -28,15 +28,12 @@ const authSlice = createSlice({
       .addCase(register.pending, handlePending)
       .addCase(register.fulfilled, handleRegisterFulfilled)
       .addCase(register.rejected, handleRejected)
-
       .addCase(logIn.pending, handlePending)
       .addCase(logIn.fulfilled, handleLogInFulfilled)
       .addCase(logIn.rejected, handleRejected)
-
       .addCase(logOut.pending, handlePending)
       .addCase(logOut.fulfilled, handleLogOutFulfilled)
       .addCase(logOut.rejected, handleRejected)
-
       .addCase(refreshUser.pending, handleRefreshUserPending)
       .addCase(refreshUser.fulfilled, handleRefreshUserFulfilled)
       .addCase(refreshUser.rejected, handleRefreshUserRejected),
